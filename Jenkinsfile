@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git url: 'https://github.com/faraz9993/Day_14.git', branch: 'main', credentialsId: 'github-pat'
+                git url: 'https://github.com/faraz9993/Day_14.git', branch: 'main'
             }
         }
 
