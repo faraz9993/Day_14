@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id') // Replace with your DockerHub credentials ID
-        DOCKERHUB_REPO = 'yourdockerhubusername/your-repo' // Replace with your DockerHub repo
-        GITHUB_REPO = 'https://github.com/yourusername/your-repo.git' // Replace with your GitHub repo
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id')
+        DOCKERHUB_REPO = 'fansari9993/test9'
+        GITHUB_REPO = 'https://github.com/faraz9993/Day_14.git' //testing
     }
 
     stages {
