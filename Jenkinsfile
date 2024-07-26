@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id')
         DOCKERHUB_REPO = 'fansari9993/test9'
-        GITHUB_REPO = 'https://github.com/faraz9993/Day_14.git' //testing
+        GITHUB_REPO = 'https://github.com/faraz9993/Day_14.git' //testing now
     }
 
     stages {
