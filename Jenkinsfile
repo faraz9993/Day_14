@@ -1,14 +1,17 @@
 pipeline {
     agent any
+
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id')
     }
+
     stages {
         stage('Checkout SCM') {
             steps {
-                git 'https://github.com/faraz9993/Day_14.git'
+                git url: 'https://github.com/faraz9993/Day_14.git', branch: 'main'
             }
         }
+
         stage('Build Docker Image') {
             steps {
                 script {
