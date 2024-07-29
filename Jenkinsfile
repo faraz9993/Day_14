@@ -3,6 +3,8 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id')
+        registry = 'docker.io'  
+        registryCredential = 'personal-docker'
     }
 
     stages {
